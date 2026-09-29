@@ -159,7 +159,7 @@ export class Utilities {
             return {
                 finalGraph: getChart,
                 header: {
-                    maxAge: 'public, max-age=1800',
+                    maxAge: 'public, max-age=1800, s-maxage=1800, stale-while-revalidate=86400',
                 },
             };
         } else {
